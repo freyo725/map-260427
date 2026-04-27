@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>中国应用心理专业硕士职业追踪调查研究</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'pku-red': '#9B1B30',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; }
+    .tab-content { display: none; }
+    .tab-content.active { display: block; }
+    .tab-btn.active { background-color: #9B1B30; color: white; }
+    .section-title { font-size: 1.25rem; font-weight: 700; color: #1e293b; margin-bottom: 1rem; }
+    .card { background: white; border-radius: 0.5rem; padding: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    .icon-circle { width: 2.5rem; height: 2.5rem; border-radius: 9999px; display: flex; align-items: center; justify-content: center; color: white; background-color: #9B1B30; margin: 0 auto 0.75rem; }
+    .card-3col { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+    @media (min-width: 640px) { .card-3col { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 768px) { .card-3col { grid-template-columns: repeat(3, 1fr); } }
+    .card:hover { box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+    .team-card { text-align: center; padding: 1rem; background: #f8fafc; border-radius: 0.5rem; }
+    .detail-link { color: #9B1B30; font-size: 0.875rem; font-weight: 500; text-decoration: none; }
+    .detail-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body class="bg-gray-50 min-h-screen">
+  <!-- 顶部Tab导航 -->
+  <nav class="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex flex-wrap justify-center md:justify-start gap-1 py-2">
+        <button class="tab-btn active px-4 py-2 rounded-md text-sm font-medium transition-colors" data-tab="home">首页</button>
+        <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors" data-tab="progress">项目进展</button>
+        <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors" data-tab="about">项目介绍</button>
+        <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors" data-tab="join">加入我们</button>
+        <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors" data-tab="team">团队介绍</button>
+        <button class="tab-btn px-4 py-2 rounded-md text-sm font-medium text-gray-600 hover:bg-gray-100 transition-colors" data-tab="contact">联系我们</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 主内容区 -->
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    
+    <!-- 首页 -->
+    <div id="home" class="tab-content active space-y-8">
+      <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">中国应用心理专业硕士职业追踪调查研究</h1>
+      
+      <!-- 简介 -->
+      <div class="card text-center">
+        <p class="text-base md:text-lg text-gray-600 leading-relaxed">
+          本研究旨在系统追踪中国应用心理专业硕士（Master of Applied Psychology, MAP）的职业发展路径，探索专业培养与行业需求的匹配度，为学科建设、人才培养和行业发展提供实证依据。
+        </p>
+      </div>
+
+      <!-- 项目进展 -->
+      <div>
+        <h2 class="section-title">项目进展</h2>
+        <div class="card border-l-4 border-l-pku-red">
+          <h3 class="font-semibold text-gray-800 mb-3">项目已完成研究队列招募及第一轮访谈和问卷调查</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">
+            截至2026年3月，项目已完成研究队列招募及第一轮访谈和问卷调查。研究队列共241人，其中2024年度招募66人，2025年度招募175人。临床与咨询心理学方向同学共166人，非临床与咨询心理学方向同学共75人。队列同学来自五湖四海，涵盖了华北、华中、华东、华南、西南和西北地区共31个高校。
+          </p>
+          <p class="mt-4 text-sm text-gray-600 leading-relaxed">
+            研究方案已通过北京大学心理与认知科学学院伦理委员会审批（编号：#2024-06-03）
+          </p>
+        </div>
+      </div>
+
+      <!-- 项目介绍 -->
+      <div>
+        <h2 class="section-title">项目介绍</h2>
+        <div class="card-3col">
+          <div class="card text-center">
+            <div class="icon-circle">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800">全面追踪个人成长和职业发展</h3>
+            <p class="mt-2 text-xs text-gray-600 leading-relaxed">持续追踪MAP学生从备考到毕业工作的全过程</p>
+          </div>
+          <div class="card text-center">
+            <div class="icon-circle">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800">探寻影响职业发展的关键因素</h3>
+            <p class="mt-2 text-xs text-gray-600 leading-relaxed">探究影响MAP学生职业发展的关键因素</p>
+          </div>
+          <div class="card text-center">
+            <div class="icon-circle">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800">为改进培养就业提供系统依据</h3>
+            <p class="mt-2 text-xs text-gray-600 leading-relaxed">为高校优化培养方案提供参考</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 加入我们 -->
+      <div>
+        <h2 class="section-title">加入我们</h2>
+        <div class="card-3col">
+          <div class="card text-center">
+            <div class="icon-circle">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800">专业发展支持</h3>
+            <p class="mt-2 text-xs text-gray-600 leading-relaxed">通过深度访谈和问卷调查梳理个人职业发展轨迹，获得个性化评估和反馈</p>
+          </div>
+          <div class="card text-center">
+            <div class="icon-circle">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800">朋辈交流平台</h3>
+            <p class="mt-2 text-xs text-gray-600 leading-relaxed">结交全国各地MAP同学，获取最新行业发展信息</p>
+          </div>
+          <div class="card text-center">
+            <div class="icon-circle">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+            </div>
+            <h3 class="text-sm font-semibold text-gray-800">学术成果共享</h3>
+            <p class="mt-2 text-xs text-gray-600 leading-relaxed">优先获取研究成果摘要，有机会参与后续学术研讨</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 团队介绍 -->
+      <div>
+        <h2 class="section-title">团队介绍</h2>
+        <div class="card">
+          <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+            <div class="w-14 h-14 rounded-full bg-pku-red flex items-center justify-center text-lg font-bold text-white shrink-0">符</div>
+            <div class="text-center sm:text-left">
+              <h3 class="font-semibold text-gray-800">符仲芳</h3>
+              <p class="text-sm text-gray-600">北京大学心理与认知科学学院研究员，博士生导师</p>
+              <p class="mt-1 text-sm text-gray-500">研究方向：临床心理学，CBT整合取向</p>
+            </div>
+          </div>
+          <div class="mt-5 grid grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="team-card"><p class="text-sm font-medium text-gray-800">张玉斌</p><p class="text-xs text-gray-500 mt-1">2023级MAP</p></div>
+            <div class="team-card"><p class="text-sm font-medium text-gray-800">任晓青</p><p class="text-xs text-gray-500 mt-1">2024级MAP</p></div>
+            <div class="team-card"><p class="text-sm font-medium text-gray-800">郭传璇</p><p class="text-xs text-gray-500 mt-1">2025级MAP</p></div>
+            <div class="team-card"><p class="text-sm font-medium text-gray-800">郝熙鸣</p><p class="text-xs text-gray-500 mt-1">2026级博士</p></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 联系我们 -->
+      <div>
+        <h2 class="section-title">联系我们</h2>
+        <div class="card" style="background-color: rgba(155,27,48,0.06);">
+          <div class="flex flex-wrap items-center justify-center gap-5 md:gap-8 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 shrink-0" style="color:#9B1B30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+              <span>chinamap_pku@163.com</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 shrink-0" style="color:#9B1B30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span>北京大学哲学楼</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <svg class="w-4 h-4 shrink-0" style="color:#9B1B30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              <span>周一至周五 09:00-17:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 项目进展 -->
+    <div id="progress" class="tab-content space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">项目进展</h1>
+      
+      <!-- 进展1 -->
+      <div class="card">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">项目已完成研究队列招募及第一轮访谈和问卷调查</h2>
+        <div class="space-y-4 text-sm text-gray-600 leading-relaxed">
+          <p>截至2026年3月，项目已完成研究队列招募及第一轮访谈和问卷调查。研究队列共241人，其中2024年度招募66人，2025年度招募175人。临床与咨询心理学方向同学共166人，非临床与咨询心理学方向同学共75人。队列同学来自五湖四海，涵盖了华北、华中、华东、华南、西南和西北地区共31个高校。</p>
+          <p>目前，项目团队已完成对所有队列同学的第一轮访谈和问卷调查，并已完成对2024年度招募同学的追踪访谈和第二次问卷调查。之后，项目团队将在每年的4~6月和11~12月进行问卷调查（每年两次），并在每年寒假进行追踪访谈（每年一次）。</p>
+          <p>此外，项目团队已建立研究队列微信群，并定期在群内发布相关信息，鼓励队列成员相互交流和支持。之后团队会筹划开展针对队列成员的线上支持性团体，同时正在搭建针对MAP同学的新手咨询师黄页平台，以期帮助和支持MAP同学的职业发展和个人成长。</p>
+        </div>
+      </div>
+
+      <!-- 进展2 -->
+      <div class="card">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">研究方案已通过伦理委员会审批</h2>
+        <p class="text-sm text-gray-500 mb-4">编号：#2024-06-03</p>
+        
+        <h3 class="font-medium text-gray-800 mb-2">研究目的</h3>
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">本研究旨在系统追踪和分析中国应用心理专业硕士（Master of Applied Psychology, MAP）的职业发展轨迹，了解他们在备考时的经历、就读时的体验以及毕业后的职业选择、职业成长及工作满意度等方面的具体情况。通过全面的数据收集和分析，本研究将揭示影响中国应用心理专业硕士职业发展的关键因素，并提出相应的改进建议，以促进该领域的教育和职业发展。</p>
+        
+        <h3 class="font-medium text-gray-800 mb-2">研究意义</h3>
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">本研究将填补国内关于应用心理专业硕士（Master of Applied Psychology, MAP）职业发展的系统性研究空白，为相关学术研究和教育实践提供数据和参考。从政策角度，研究结果将为高等教育机构和相关政府部门制定和优化MAP的培养方案和职业发展政策提供科学依据，从而提升MAP学生的就读体验，并提高毕业生的就业质量和职业幸福感。同时，通过深入了解毕业生在职业发展中的实际需求和挑战，本研究可以为在校学生及毕业生提供更具针对性的指导和支持服务，帮助他们更好地规划职业路径。</p>
+        
+        <h3 class="font-medium text-gray-800 mb-2">研究计划</h3>
+        <p class="text-sm text-gray-600 leading-relaxed mb-3">本项目计划招募应用心理专业硕士（Master of Applied Psychology, MAP）学历教育培养项目中的学生进行调查和追踪。追踪同一批MAP学生从入学到毕业后的职业发展情况。采用问卷调查、深度访谈和二次数据收集等方法进行研究。每隔半年进行一次系统性的评估和数据收集。具体涉及变量如下：</p>
+        <ul class="text-sm text-gray-600 leading-relaxed list-disc list-inside space-y-1 mb-4">
+          <li><strong>培养项目本身：</strong>准入/毕业难度、授课形式、课程数量和难度、考核方式、项目投入、项目收益以及实践/科研相关要求</li>
+          <li><strong>教师：</strong>授课风格、流派、专业背景和师生关系</li>
+          <li><strong>个人：</strong>在校具体活动及时间、职业规划、人格特质、心理变量（自我同一性、心理韧性、认知灵活性、对模糊的耐受性、乐观、利他、情绪稳定性、动机、幸福感、满意度和压力等）</li>
+          <li><strong>社会（支持）：</strong>同学关系、就业资源、社会政策、实习中心基础设施建设、家庭收入、行业发展及地位等</li>
+        </ul>
+        <p class="text-sm text-gray-600 leading-relaxed mb-4">完整参与研究的志愿者会获得相应报酬，同时报酬也可以捐赠于我们目前正在筹划为MAP毕业生建设的新手咨询师黄页平台，期待得到你的建议和反馈。</p>
+        
+        <h3 class="font-medium text-gray-800 mb-2">研究信息保密和储存</h3>
+        <div class="space-y-3 text-sm text-gray-600 leading-relaxed">
+          <p><strong>（1）信息保密：</strong>问卷调查通过安全的在线平台进行，确保数据传输的安全性。对于纸质问卷，填写完毕后将立即封存，并在24小时内转移到安全存储地点。访谈过程中在征求参与者意见的基础上录音、录像，访谈记录将以编码方式保存，访谈内容只限研究团队内部使用。</p>
+          <p><strong>（2）科研档案管理：</strong>所有电子数据将存储在加密的研究数据库中，数据库采用高级别加密技术，并设置严格的访问权限，仅限研究团队核心成员访问。所有纸质问卷和记录将在收集后立即扫描并数字化，原件将存放在加锁的文件柜中。</p>
+          <p><strong>（3）知情同意：</strong>在数据收集之前，向每位参与者提供详细的知情同意书，解释研究目的、数据使用方式、保密措施等，确保参与者知情同意。</p>
+          <p><strong>（4）数据分析过程中的保密措施：</strong>在数据分析过程中，使用编码而非真实身份信息进行数据分析，确保分析结果无法追溯到具体个人。</p>
+          <p><strong>（5）数据共享和发布：</strong>研究结果以汇总数据的形式发布，不包含任何个人身份信息。</p>
+          <p><strong>（6）数据销毁：</strong>根据伦理要求和研究计划，数据将在研究结束后的规定期限内（通常为5年）保存。保存期限到期后，所有数据将永久删除，确保数据无法恢复。</p>
+        </div>
+        
+        <h3 class="font-medium text-gray-800 mt-5 mb-2">研究者团队</h3>
+        <p class="text-sm text-gray-600 leading-relaxed">研究由北京大学临床与健康心理系一抹阳光实验室发起，负责人为符仲芳研究员，联系方式z.fu@pku.edu.cn。如有任何问题，欢迎邮件联系！感谢各位志愿参与的同学的贡献，我们将珍惜在此过程中所建立的研究关系，进一步促进MAP项目的健康发展。</p>
+      </div>
+    </div>
+
+    <!-- 项目介绍 -->
+    <div id="about" class="tab-content space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">项目介绍</h1>
+      
+      <div class="card-3col">
+        <div class="card text-center">
+          <div class="icon-circle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path></svg>
+          </div>
+          <h3 class="text-base font-semibold text-gray-800 mb-3">全面追踪个人成长和职业发展</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">我们构建了覆盖全国应用心理专业硕士（MAP）项目的就读学生队列，持续追踪他们从备考、读研到毕业工作的全过程，真实记录发展轨迹。</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon-circle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <h3 class="text-base font-semibold text-gray-800 mb-3">探寻影响职业发展的关键因素</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">我们想探究在MAP职业探索和发展的过程中，学生就读体验、个人成长、外部环境等关键经历如何塑造MAP学生的职业选择、形成、发展与稳定。</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon-circle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <h3 class="text-base font-semibold text-gray-800 mb-3">为改进培养就业提供系统依据</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">我们不仅记录现状，也希望推动改变。研究结果将为高校优化MAP培养方案、为行业改进支持体系、为学生进行职业规划提供更有依据的参考。</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">研究涉及变量</h2>
+        <div class="space-y-4 text-sm text-gray-600 leading-relaxed">
+          <div>
+            <h3 class="font-medium text-gray-800 mb-1">（1）培养项目本身</h3>
+            <p>准入/毕业难度、授课形式（线上/线下，时间是否集中等）、课程数量和难度、考核方式、项目投入（时间、开销、准入成本）、项目收益（证书和各种资历认证）以及实践/科研相关要求</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-800 mb-1">（2）教师</h3>
+            <p>授课风格、流派、专业背景和师生关系（授课、班主任、导师和督导等）</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-800 mb-1">（3）个人</h3>
+            <p>在校具体活动及时间、职业规划、人格特质、性别、发展连续性（进入MAP前的工作）、个人收入、年龄、心理变量（自我同一性、心理韧性、认知灵活性、对模糊的耐受性、乐观、利他、情绪稳定性、动机、幸福感、满意度和压力等）；对专业、行业、项目、来访的态度；感知到的项目性价比；个人胜任力；自身社会地位</p>
+          </div>
+          <div>
+            <h3 class="font-medium text-gray-800 mb-1">（4）社会（支持）</h3>
+            <p>同学关系、就业资源、社会政策、实习中心基础设施建设、家庭收入、行业发展及地位等</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 加入我们 -->
+    <div id="join" class="tab-content space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">加入我们</h1>
+      
+      <div class="card-3col">
+        <div class="card text-center">
+          <div class="icon-circle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+          </div>
+          <h3 class="text-base font-semibold text-gray-800 mb-3">专业发展支持</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">通过深度访谈和问卷调查梳理个人职业发展和成长轨迹，并获得个性化评估和反馈。</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon-circle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+          </div>
+          <h3 class="text-base font-semibold text-gray-800 mb-3">朋辈交流平台</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">结交全国各地MAP同学，获取最新行业发展信息，并有机会参与由北京大学临床心理学专业学生带领的朋辈支持团体。</p>
+        </div>
+        <div class="card text-center">
+          <div class="icon-circle">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+          </div>
+          <h3 class="text-base font-semibold text-gray-800 mb-3">学术成果共享</h3>
+          <p class="text-sm text-gray-600 leading-relaxed">优先获取研究成果摘要，有机会参与后续学术研讨，共同推动行业发展。</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">参与方式</h2>
+        <div class="space-y-4">
+          <a href="YOUR_RECRUITMENT_URL_HERE" target="_blank" class="block w-full py-3 px-6 bg-pku-red text-white text-center font-medium rounded-lg hover:opacity-90 transition-opacity">
+            作为参与者加入研究队列
+          </a>
+          <div class="text-center py-3 px-6 border-2 border-pku-red text-pku-red font-medium rounded-lg">
+            作为研究者加入研究团队 → 请发邮件至 chinamap_pku@163.com
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 团队介绍 -->
+    <div id="team" class="tab-content space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">团队介绍</h1>
+      
+      <div class="card">
+        <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4">
+          <div class="w-16 h-16 rounded-full bg-pku-red flex items-center justify-center text-xl font-bold text-white shrink-0">符</div>
+          <div class="text-center sm:text-left">
+            <h3 class="text-lg font-semibold text-gray-800">符仲芳</h3>
+            <p class="text-sm text-gray-600">北京大学心理与认知科学学院研究员，博士生导师</p>
+            <p class="text-xs text-gray-500 mt-1">2016年毕业于北京师范大学心理学院，获得学士（2013）、硕士（2016）学位，专业方向为临床心理学。2021年毕业于阿姆斯特丹大学附属医院精神科，获得博士学位。2022年加入北京大学至今。</p>
+            <p class="text-sm text-gray-600 mt-3">符仲芳研究员实验室主要聚焦于如何通过跨诊断的视角来促进对情绪障碍的理解和干预，实务方向以CBT为主进行整合，秉持循证干预的理念，将研究中发现的可改变元素转化进入实践领域中。在此基础上，希望进一步促进临床心理学专业硕士的培养与循证实践。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="text-lg font-semibold text-gray-800 mb-4">团队成员</h2>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="team-card"><p class="text-sm font-medium text-gray-800">张玉斌</p><p class="text-xs text-gray-500 mt-1">北京大学心理与认知科学学院2023级应用心理专业硕士</p></div>
+          <div class="team-card"><p class="text-sm font-medium text-gray-800">任晓青</p><p class="text-xs text-gray-500 mt-1">北京大学心理与认知科学学院2024级应用心理专业硕士</p></div>
+          <div class="team-card"><p class="text-sm font-medium text-gray-800">郭传璇</p><p class="text-xs text-gray-500 mt-1">北京大学心理与认知科学学院2025级应用心理专业硕士</p></div>
+          <div class="team-card"><p class="text-sm font-medium text-gray-800">郝熙鸣</p><p class="text-xs text-gray-500 mt-1">北京大学心理与认知科学学院2026级博士研究生</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 联系我们 -->
+    <div id="contact" class="tab-content space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-center text-gray-800">联系我们</h1>
+      
+      <div class="card" style="background-color: rgba(155,27,48,0.06);">
+        <div class="space-y-4 text-center">
+          <div class="flex items-center justify-center gap-3">
+            <svg class="w-5 h-5 shrink-0" style="color:#9B1B30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+            <span class="text-base text-gray-700">chinamap_pku@163.com</span>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <svg class="w-5 h-5 shrink-0" style="color:#9B1B30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <span class="text-base text-gray-700">北京大学哲学楼</span>
+          </div>
+          <div class="flex items-center justify-center gap-3">
+            <svg class="w-5 h-5 shrink-0" style="color:#9B1B30" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <span class="text-base text-gray-700">周一至周五 09:00-17:00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="text-lg font-semibold text-gray-800 mb-3">联系负责人</h2>
+        <p class="text-sm text-gray-600 leading-relaxed">符仲芳 研究员</p>
+        <p class="text-sm text-gray-600 leading-relaxed">邮箱：z.fu@pku.edu.cn</p>
+        <p class="text-sm text-gray-600 leading-relaxed mt-2">如有任何问题，欢迎邮件联系！感谢各位志愿参与的同学的贡献，我们将珍惜在此过程中所建立的研究关系，进一步促进MAP项目的健康发展。</p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="bg-white border-t border-gray-200 py-4 mt-8">
+    <div class="max-w-5xl mx-auto px-4 text-center text-sm text-gray-500">
+      <p>北京大学临床与健康心理系 一抹阳光实验室</p>
+    </div>
+  </footer>
+
+  <script>
+    // Tab切换功能
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // 移除所有active
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+        
+        // 添加active到当前
+        btn.classList.add('active');
+        const tabId = btn.getAttribute('data-tab');
+        document.getElementById(tabId).classList.add('active');
+        
+        // 滚动到顶部
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
